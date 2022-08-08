@@ -51,7 +51,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hsztan/Paymintz/issues).
+Feel free to check the [issues page](https://github.com/hsztan/Hello-Rails-React/issues).
 
 ## Show your support
 
@@ -59,8 +59,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to all the Micromates and the Ruby on Rails community for their support.
-- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+- Hat tip to FreeCodeCamp for the [React-Rails Tutorial](https://www.freecodecamp.org/news/how-to-create-a-rails-project-with-a-react-and-redux-front-end-8b01e17a1db/)
 
 ## 📝 License
 
