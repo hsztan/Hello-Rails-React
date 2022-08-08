@@ -13,7 +13,6 @@ function rootReducer(state = initialState, action) {
         greeting: action.payload,
       };
     case 'GET_GREETING_SUCCESS':
-      console.log('GET_GREETING_SUCCESS', action.payload);
       return {
         ...state,
         greeting: action.payload.greeting,
