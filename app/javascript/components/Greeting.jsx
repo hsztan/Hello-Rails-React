@@ -17,13 +17,13 @@ class Greeting extends React.Component {
   render() {
     return (
       <div className="greet">
+        <h2>Greeting: {this.props.greeting}</h2>
         <button
           className="getGreetingBtn"
-          onclick={() => this.props.getGreeting()}
+          onClick={() => this.props.getGreeting()}
         >
           Get Greeting
         </button>
-        Greeting: {this.props.greeting}
       </div>
     );
   }
