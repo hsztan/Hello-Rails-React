@@ -1,4 +1,5 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
 const initialState = {
   greeting: 'Hi',
@@ -11,11 +12,18 @@ function rootReducer(state = initialState, action) {
         ...state,
         greeting: action.payload,
       };
+    case 'GET_GREETING_SUCCESS':
+      console.log('GET_GREETING_SUCCESS', action.payload);
+      return {
+        ...state,
+        greeting: action.payload.greeting,
+      };
     default:
       return state;
   }
 }
 
 export default function configureStore() {
-  return createStore(rootReducer, initialState);
+  const store = createStore(rootReducer, applyMiddleware(thunk));
+  return store;
 }
