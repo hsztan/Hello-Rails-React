@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import PropTypes from 'prop-types';
+import './Greeting.css';
 
 const GET_GREETING = 'GET_GREETING';
 
@@ -15,7 +16,7 @@ function getGreeting() {
 class Greeting extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="greet">
         <button
           className="getGreetingBtn"
           onclick={() => this.props.getGreeting()}
@@ -23,7 +24,7 @@ class Greeting extends React.Component {
           Get Greeting
         </button>
         Greeting: {this.props.greeting}
-      </React.Fragment>
+      </div>
     );
   }
 }

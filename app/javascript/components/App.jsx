@@ -15,7 +15,7 @@ class App extends React.Component {
           <Routes>
             <Route path="/" element={<h1>Hello this is home</h1>} />
             <Route
-              path="/hello"
+              path="/greet"
               element={<Greeting greeting="Hello World" />}
             />
           </Routes>
