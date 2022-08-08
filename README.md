@@ -29,7 +29,6 @@ rails db:migrate
 ```
 rails db:seed
 ```
-```
 
 ```
 'rails s' to start the server locally
